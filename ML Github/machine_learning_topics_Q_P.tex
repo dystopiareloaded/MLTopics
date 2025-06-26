@@ -1,0 +1,271 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+
+\title{\textbf{University-Style Machine Learning Question Bank}\\\large (Topic-Wise: Weeks 23–36)}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Week 23: Introduction to ML \& Linear Regression}
+\textbf{Theory}
+\begin{itemize}
+\item Define ML. Differentiate Supervised, Unsupervised, Semi-supervised, Reinforcement Learning.
+\item Discuss challenges in ML system design.
+\item Compare Batch vs. Online Learning.
+\item Explain ML development life cycle.
+\end{itemize}
+
+\textbf{Derivation}
+\begin{itemize}
+\item Derive the Normal Equation for Simple Linear Regression.
+\item Prove least squares minimizes sum of squared errors.
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item Compute slope and intercept manually.
+\item Calculate MAE, MSE, RMSE, and $R^2$.
+\end{itemize}
+
+\section*{Week 24: Gradient Descent}
+\textbf{Theory}
+\begin{itemize}
+\item Compare Batch, Stochastic, and Mini-Batch Gradient Descent.
+\item Explain effect of learning rate.
+\end{itemize}
+
+\textbf{Derivation}
+\begin{itemize}
+\item Derive update rules for $\theta_0$ and $\theta_1$.
+\item Show GD on convex vs. non-convex losses.
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item 3 iterations of GD with $\theta=0$.
+\item Compare convergence using $\alpha = 0.01$ and $0.1$.
+\end{itemize}
+
+\section*{Week 25: Regression Analysis}
+\textbf{Theory}
+\begin{itemize}
+\item Difference between inference and prediction.
+\item Explain assumptions of Linear Regression.
+\end{itemize}
+
+\textbf{Derivation}
+\begin{itemize}
+\item Derive F-statistic using ESS, RSS, TSS.
+\item Prove $R^2 = 1 - \frac{RSS}{TSS}$.
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item Compute $R^2$, Adjusted $R^2$, and F-statistic.
+\item Interpret confidence intervals and p-values.
+\end{itemize}
+
+\section*{Week 26: Feature Selection}
+\textbf{Theory}
+\begin{itemize}
+\item Compare Filter, Wrapper, and Embedded methods.
+\item Limitations of correlation-based feature selection.
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item Calculate ANOVA F-value for a feature.
+\item Compute VIF and interpret multicollinearity.
+\end{itemize}
+
+\section*{Week 27: Regularization}
+\textbf{Theory}
+\begin{itemize}
+\item Explain bias-variance tradeoff with diagram.
+\item Differences among Ridge, Lasso, and ElasticNet.
+\end{itemize}
+
+\textbf{Derivation}
+\begin{itemize}
+\item Derive Ridge Regression cost function and normal equation.
+\item Show how L1 regularization leads to sparsity.
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item Compute Ridge coefficients for a dataset.
+\item Plot coefficient paths for Lasso.
+\end{itemize}
+
+\section*{Week 28: K-Nearest Neighbors}
+\textbf{Theory}
+\begin{itemize}
+\item Explain effect of $K$ on bias and variance.
+\item Describe distance metrics used in KNN.
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item Classify a point using $K=3$ on given data.
+\item Perform weighted KNN prediction.
+\end{itemize}
+
+\section*{Week 29: Principal Component Analysis (PCA)}
+\textbf{Theory}
+\begin{itemize}
+\item What is the curse of dimensionality? How does PCA help?
+\item Compare PCA and SVD.
+\end{itemize}
+
+\textbf{Derivation}
+\begin{itemize}
+\item Derive PCA using variance maximization.
+\item Explain role of eigenvalues and eigenvectors.
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item Standardize a 2D dataset, compute covariance matrix.
+\item Perform eigen-decomposition and project onto principal component.
+\end{itemize}
+
+\section*{Week 30: Model Evaluation and Selection}
+\textbf{Theory}
+\begin{itemize}
+\item Explain ROC-AUC curve and confusion matrix.
+\item Discuss precision-recall trade-off.
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item Calculate accuracy, precision, recall, F1-score from confusion matrix.
+\item Compute k-fold cross-validation score.
+\end{itemize}
+
+\section*{Week 31: Naive Bayes}
+\textbf{Theory}
+\begin{itemize}
+\item State Naive Bayes assumption.
+\item Compare Gaussian, Multinomial, and Bernoulli Naive Bayes.
+\end{itemize}
+
+\textbf{Derivation}
+\begin{itemize}
+\item Derive Bayes' Theorem and its application to classification.
+\item Explain need for log probabilities and Laplace smoothing.
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item Calculate posterior class probability for a text.
+\item Build spam classifier using word frequencies.
+\end{itemize}
+
+\section*{Week 32: Logistic Regression}
+\textbf{Theory}
+\begin{itemize}
+\item Explain sigmoid function and its interpretation.
+\item Define odds, log-odds and their use in interpretation.
+\end{itemize}
+
+\textbf{Derivation}
+\begin{itemize}
+\item Derive log-likelihood function for logistic regression.
+\item Show gradient descent update for logistic loss.
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item Perform 1 iteration of gradient descent.
+\item Calculate log loss for a small prediction set.
+\end{itemize}
+
+\section*{Week 33: Support Vector Machines}
+\textbf{Theory}
+\begin{itemize}
+\item Compare hard and soft margin SVM.
+\item Explain purpose of kernel functions.
+\end{itemize}
+
+\textbf{Derivation}
+\begin{itemize}
+\item Derive SVM optimization formulation.
+\item Explain KKT conditions in context of SVM.
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item Identify support vectors from a plot.
+\item Compute RBF kernel value between two points.
+\end{itemize}
+
+\section*{Week 34: Decision Trees}
+\textbf{Theory}
+\begin{itemize}
+\item Explain CART algorithm using Gini impurity.
+\item What is pruning? Why is it needed?
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item Compute Gini index and Information Gain.
+\item Build a decision tree of depth 2 manually.
+\end{itemize}
+
+\section*{Week 35: Ensemble Methods}
+\textbf{Theory}
+\begin{itemize}
+\item Compare Bagging and Boosting.
+\item Explain working of Random Forest.
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item Simulate 3-tree Random Forest manually.
+\item Perform 2 rounds of AdaBoost.
+\end{itemize}
+
+\section*{Week 36: Gradient Boosting and XGBoost}
+\textbf{Theory}
+\begin{itemize}
+\item Explain working of Gradient Boosting.
+\item How does XGBoost differ from traditional GBM?
+\end{itemize}
+
+\textbf{Derivation}
+\begin{itemize}
+\item Derive function update for log-loss classification.
+\item Explain regularization using Taylor expansion.
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item Perform one iteration of Gradient Boosting.
+\item Compute similarity score and gain in XGBoost.
+\end{itemize}
+
+\section*{Clustering Algorithms (KMeans, DBSCAN, Hierarchical)}
+\textbf{Theory}
+\begin{itemize}
+\item Compare Partitional, Hierarchical, and Density-based clustering.
+\item Explain Elbow method and Silhouette Score.
+\end{itemize}
+
+\textbf{Derivation}
+\begin{itemize}
+\item Derive update rule for Lloyd’s algorithm in KMeans.
+\end{itemize}
+
+\textbf{Numerical}
+\begin{itemize}
+\item Perform 2 iterations of KMeans on 2D data.
+\item Classify points as core/border in DBSCAN.
+\item Construct dendrogram and determine number of clusters.
+\end{itemize}
+
+\end{document}

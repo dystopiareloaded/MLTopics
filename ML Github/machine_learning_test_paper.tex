@@ -1,0 +1,128 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Semester Exam – Machine Learning}
+\lhead{University of Data Sciences}
+\rfoot{Page \thepage}
+
+\title{\textbf{University of Data Sciences} \\ \vspace{0.5em} \Large Semester Examination – Machine Learning}
+\date{}
+\begin{document}
+
+\maketitle
+\vspace{-1em}
+\noindent\textbf{Duration:} 3 Hours \hfill \textbf{Full Marks:} 100\\
+\textbf{Instructions:}
+\begin{itemize}
+  \item Attempt all questions from \textbf{Section A (Compulsory)}
+  \item Answer \textbf{any 3} questions from \textbf{Section B} and \textbf{any 2} from \textbf{Section C}
+  \item Show all necessary steps in derivations and numericals
+  \item Use appropriate diagrams/visuals where applicable
+\end{itemize}
+
+\section*{Section A: Compulsory – 30 Marks (Short Answer)}
+\begin{enumerate}[label=\arabic*.]
+    \item Define Machine Learning. Differentiate between Supervised and Unsupervised learning.
+    \item What is the role of the learning rate in gradient descent?
+    \item Mention two assumptions of Linear Regression.
+    \item Define $R^2$ and Adjusted $R^2$. Why is Adjusted $R^2$ preferred in multiple regression?
+    \item Write the cost function for Ridge Regression.
+    \item What is the curse of dimensionality in the context of KNN?
+    \item List any two key differences between Logistic Regression and Linear Regression.
+    \item Define VIF and its use in detecting multicollinearity.
+    \item What is data leakage? Give one example.
+    \item Compare Batch, Stochastic, and Mini-batch Gradient Descent.
+\end{enumerate}
+
+\section*{Section B: Theory \& Derivation – 40 Marks (Any 3 $\times$ 13.33)}
+
+\textbf{Q1. Linear Regression \& Error Metrics}
+\begin{itemize}
+  \item[(a)] Derive the normal equation for Simple Linear Regression.
+  \item[(b)] Define and derive the formula for Mean Squared Error (MSE).
+  \item[(c)] Explain the geometrical interpretation of regression line fitting.
+\end{itemize}
+
+\textbf{Q2. Gradient Descent}
+\begin{itemize}
+  \item[(a)] Derive the update rule for $\theta_0$ and $\theta_1$ in gradient descent for linear regression.
+  \item[(b)] Explain how learning rate affects convergence.
+  \item[(c)] What happens when the cost function is non-convex?
+\end{itemize}
+
+\textbf{Q3. Regularization Techniques}
+\begin{itemize}
+  \item[(a)] Explain the bias-variance tradeoff with a diagram.
+  \item[(b)] Derive the Ridge Regression cost function and show how it modifies the normal equation.
+  \item[(c)] Contrast Lasso and Ridge in terms of feature selection.
+\end{itemize}
+
+\textbf{Q4. Principal Component Analysis (PCA)}
+\begin{itemize}
+  \item[(a)] Derive PCA from first principles using variance maximization.
+  \item[(b)] Explain the role of eigenvectors and eigenvalues in PCA.
+  \item[(c)] Why is standardization important before applying PCA?
+\end{itemize}
+
+\textbf{Q5. Logistic Regression}
+\begin{itemize}
+  \item[(a)] Derive the log-likelihood function for logistic regression.
+  \item[(b)] Explain how gradient descent is applied to logistic regression.
+  \item[(c)] Interpret the meaning of coefficients in logistic regression.
+\end{itemize}
+
+\section*{Section C: Numericals \& Applied Problems – 30 Marks (Any 2 $\times$ 15)}
+
+\textbf{Q6. Multiple Linear Regression \& Multicollinearity}
+\begin{itemize}
+  \item Given a dataset with 3 predictors and a dependent variable, perform multiple linear regression and compute $R^2$ and Adjusted $R^2$.
+  \item Also, calculate VIF for each predictor and interpret.
+\end{itemize}
+
+\textbf{Q7. Naive Bayes Classifier (Numerical)}
+\begin{itemize}
+  \item You are given data about email spam classification. Using Naive Bayes, calculate the probability that a new email with specific word counts is spam.
+  \item Include Laplace smoothing.
+\end{itemize}
+
+\textbf{Q8. PCA Numerical}
+\begin{itemize}
+  \item Given the 2D dataset:
+  \[
+  X = \begin{bmatrix}
+  2 & 0 \\
+  0 & 2 \\
+  1 & 1
+  \end{bmatrix}
+  \]
+  \item (a) Standardize the data  
+  \item (b) Compute the covariance matrix  
+  \item (c) Extract eigenvalues and eigenvectors  
+  \item (d) Project the data to 1D using PCA
+\end{itemize}
+
+\textbf{Q9. Gradient Descent Simulation}
+\begin{itemize}
+  \item Implement gradient descent from scratch (pseudo-code allowed) for the cost function:
+  \[
+  J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)})^2
+  \]
+  \item Use initial $\theta = 0$, learning rate = 0.01, and 3 data points. Show 3 iterations manually.
+\end{itemize}
+
+\textbf{Q10. Classification Metrics \& Confusion Matrix}
+\begin{itemize}
+  \item A binary classifier gives the following results: TP = 50, FP = 10, TN = 30, FN = 10.
+  \item Calculate: Accuracy, Precision, Recall, F1-score
+  \item Draw the confusion matrix.
+\end{itemize}
+
+\section*{Bonus Question (5 Marks)}
+\textbf{Q11.} What are the advantages and limitations of using Ensemble Methods like Random Forest and Gradient Boosting in real-world datasets?
+
+\end{document}
